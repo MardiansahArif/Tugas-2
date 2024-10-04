@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisi Miring Segitiga</title>
+</head>
+<body>
+    <h2>Menghitung Sisi Miring Segitiga Siku-siku</h2>
+    <p>Alas: 4 cm, Tinggi: 5 cm</p>
+    <button onclick="hitungSisiMiring()">Hitung Sisi Miring</button>
+    <p id="sisiMiring"></p>
+    <a href="luas_segitiga.html">Lanjut kembali ke Luas luas_segitiga</a>
+
+
+    <script>
+        function hitungSisiMiring() {
+            const alas = 4;
+            const tinggi = 5;
+            const sisiMiring = Math.sqrt(Math.pow(alas, 2) + Math.pow(tinggi, 2));
+            document.getElementById('sisiMiring').innerText = 'Sisi Miring: ' + sisiMiring.toFixed(2) + ' cm';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luas Segitiga</title>
+</head>
+<body>
+    <h2>Menghitung Luas Segitiga</h2>
+    <p>Alas: 8 cm, Tinggi: 5 cm</p>
+    <button onclick="hitungLuasSegitiga()">Hitung Luas</button>
+    <p id="luasSegitiga"></p>
+    <a href="volume_bola.html">Lanjut ke Volume Bola</a>
+    
+    <p>Nama: Arif Mardiansah</p>
+    <p>NIM: 2221002</p>
+    <p>Prodi: Teknik Elektro Siskom</p>
+
+    <script>
+        function hitungLuasSegitiga() {
+            const alas = 8;
+            const tinggi = 5;
+            const luas = (alas * tinggi) / 2;
+            document.getElementById('luasSegitiga').innerText = 'Luas Segitiga: ' + luas + ' cm²';
+        }
+    </script>
+</body>
+</html>
